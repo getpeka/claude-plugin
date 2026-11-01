@@ -1,6 +1,6 @@
 {
   "name": "peka-cloud",
-  "version": "0.9.3",
+  "version": "0.10.0",
   "description": "peka for every computer with your Claude login: add it on claude.ai, press Connect on its Connectors tab, and each computer joins your peka account by itself after its first reply in Claude Code.",
   "author": {
     "name": "Peka",

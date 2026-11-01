@@ -4,7 +4,7 @@
   },
   "hub": {
     "version": "0.9.0",
-    "url": "https://github.com/getpeka/hub/releases/download/v0.9.0/",
+    "url": "https://downloads.getpeka.com/hub/0.9.0/",
     "files": {
       "windows-x64": {
         "file": "peka-hub-windows-x64.tar.gz",

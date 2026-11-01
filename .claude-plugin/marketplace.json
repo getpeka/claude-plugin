@@ -1,0 +1,19 @@
+{
+  "name": "getpeka",
+  "owner": {
+    "name": "Peka"
+  },
+  "description": "peka: point at your running app in Chrome, and Claude Code fixes it.",
+  "plugins": [
+    {
+      "name": "peka",
+      "source": "./plugin",
+      "description": "Point at your running app in Chrome and Claude fixes it."
+    },
+    {
+      "name": "peka-cloud",
+      "source": "./plugin-cloud",
+      "description": "peka for every computer with your Claude login, with the peka connector."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "peka",
+  "version": "0.9.2",
+  "description": "Point at your running app in Chrome and Claude fixes it. Feedback from the peka Chrome extension lands in your session with screenshots, the selector and the component, and wakes Claude even when it's idle.",
+  "author": { "name": "Peka", "url": "https://getpeka.com" },
+  "homepage": "https://getpeka.com",
+  "keywords": ["feedback", "ui", "design", "bugs", "chrome", "screenshots"]
+}

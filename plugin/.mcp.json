@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "peka": {
+      "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
+      "args": ["mcp", "--delivery=hook"]
+    }
+  }
+}

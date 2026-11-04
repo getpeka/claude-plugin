@@ -1,7 +1,7 @@
 {
   "name": "peka",
   "displayName": "Peka",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Point at your running app in your browser, say what should change, and Claude Code fixes it. Notes from the Peka browser extension land in your session with a screenshot, the selector and the component behind it, and wake Claude even when it is idle.",
   "author": {
     "name": "Peka",

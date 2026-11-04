@@ -2,7 +2,7 @@
   "name": "peka",
   "displayName": "Peka",
   "version": "0.11.0",
-  "description": "Point at your running app in Chrome and Claude fixes it. Feedback from the peka Chrome extension lands in your session with screenshots, the selector and the component, and wakes Claude even when it's idle.",
+  "description": "Point at your running app in your browser, say what should change, and Claude Code fixes it. Notes from the Peka browser extension land in your session with a screenshot, the selector and the component behind it, and wake Claude even when it is idle.",
   "author": {
     "name": "Peka",
     "url": "https://getpeka.com"

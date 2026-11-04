@@ -1,0 +1,54 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
+            "args": ["wait", "--join"],
+            "asyncRewake": true,
+            "timeout": 604800
+          }
+        ]
+      }
+    ],
+    "UserPromptExpansion": [
+      {
+        "matcher": "peka:setup:cloud",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
+            "args": ["login"],
+            "timeout": 20
+          }
+        ]
+      },
+      {
+        "matcher": "peka:login",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
+            "args": ["login"],
+            "timeout": 20
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*__peka_connect_computer",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
+            "args": ["joined"],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

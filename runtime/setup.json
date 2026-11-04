@@ -1,0 +1,23 @@
+{
+  "chrome": {
+    "extensionId": "jjfjanhhhpgmcheeplmmapiglocofbdo"
+  },
+  "hub": {
+    "version": "0.10.0",
+    "url": "https://downloads.getpeka.com/hub/v0.10.0/",
+    "files": {
+      "windows-x64": {
+        "file": "peka-hub-windows-x64.tar.gz",
+        "sha256": "1e29a378481383cdd206ae9a143b1619f689d089ebace4fe7f317779648d384c"
+      },
+      "darwin-arm64": {
+        "file": "peka-hub-darwin-arm64.tar.gz",
+        "sha256": "0685795b95d8c5bbd1991732e4a86fd0bb1cb258a5f75b419089513b9b3ac467"
+      },
+      "darwin-x64": {
+        "file": "peka-hub-darwin-x64.tar.gz",
+        "sha256": "6e11f85ac2f3a484b96afe1cc58a46bc5a795c0c6e841da65627f163e446c096"
+      }
+    }
+  }
+}

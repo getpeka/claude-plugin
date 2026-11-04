@@ -1,13 +1,13 @@
 {
   "mcpServers": {
-    "peka-local": {
+    "peka": {
       "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
       "args": [
         "mcp",
         "--delivery=hook"
       ]
     },
-    "peka": {
+    "peka-cloud": {
       "type": "http",
       "url": "https://hub.getpeka.com/mcp"
     }

@@ -7,13 +7,8 @@
   "plugins": [
     {
       "name": "peka",
-      "source": "./plugin",
+      "source": "./",
       "description": "Point at your running app in Chrome and Claude fixes it."
-    },
-    {
-      "name": "peka-cloud",
-      "source": "./plugin-cloud",
-      "description": "peka for every computer with your Claude login, with the peka connector."
     }
   ]
 }

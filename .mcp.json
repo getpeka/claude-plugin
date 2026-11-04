@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "peka": {
+    "notes": {
       "command": "${CLAUDE_PLUGIN_ROOT}/runtime/peka",
       "args": [
         "mcp",

@@ -4,15 +4,18 @@ Point at something in your app in Chrome, say what should change, and the note r
 
 ## Set up
 
-- **On every computer with your Claude login, with Peka cloud:** add Peka from Claude's directory and connect its connector, which signs you in to Peka. On each computer, after its first reply in Claude Code, Claude connects that computer, and your browser asks you to allow it. Add the Peka extension to Chrome from the Chrome Web Store and sign it in.
-- **On this computer only, for free:** run `/peka:setup:local` and `/peka:setup:chrome` in Claude Code. They install Peka's hub here and add the Chrome extension, and notes never leave this computer.
-- `/peka:setup:cloud` connects this computer to your Peka account at any time, and `/peka:status` says how Peka is set up here.
+Copy the setup prompt from <https://getpeka.com/install> and paste it into Claude Code on each computer. Claude installs this plugin, sets up the computer, and adds the Peka extension to Chrome. The same prompt updates it later.
 
-From the command line instead of the directory:
+By hand, in Claude Code:
 
 ```
-/plugin install peka --marketplace getpeka/claude-plugin
+/plugin marketplace add getpeka/claude-plugin
+/plugin install peka@getpeka
 ```
+
+- **On this computer only, for free:** run `/peka:setup:local` and `/peka:setup:chrome`. They install Peka's hub here and add the Chrome extension, and notes never leave this computer.
+- **With Peka cloud, for notes between your computers:** run `/peka:setup:cloud` on each one, and approve it in your browser. With the Peka connector added to your Claude account, from Claude's directory, a computer with this plugin asks to join by itself after its first reply.
+- `/peka:status` says how Peka is set up here.
 
 Step by step: <https://getpeka.com/docs>
 

@@ -1,5 +1,5 @@
 ---
-description: How peka is set up on this computer: the hub, peka cloud, the connector and the Chrome extension
+description: How peka is set up on this computer: the hub, peka cloud and the Chrome extension
 ---
 
 Say how peka is set up on this computer by running its status program with the Bash tool:

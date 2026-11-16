@@ -1,5 +1,5 @@
 ---
-description: How peka is set up on this computer: the hub, peka cloud and the Chrome extension
+description: How peka is set up on this computer: its version, the hub, peka cloud and the Chrome extension
 ---
 
 Say how peka is set up on this computer by running its status program with the Bash tool:
@@ -8,4 +8,4 @@ Say how peka is set up on this computer by running its status program with the B
 
 On Windows, run "${CLAUDE_PLUGIN_ROOT}/runtime/peka.exe" status instead.
 
-It changes nothing. Tell the user what it printed, as a short list, and which of /peka:setup:local, /peka:setup:chrome or /peka:setup:cloud would finish the setup, if anything is missing.
+It changes nothing. Tell the user what it printed, as a short list, and which of /peka:setup:local, /peka:setup:chrome or /peka:setup:cloud would finish the setup, if anything is missing, or /peka:update, if a newer Peka is out.

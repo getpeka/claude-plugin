@@ -4,7 +4,7 @@ Point at something in your app in Chrome, say what should change, and the note r
 
 ## Set up
 
-Copy the setup prompt from <https://getpeka.com/install> and paste it into Claude Code on each computer. Claude installs this plugin, sets up the computer, and adds the Peka extension to Chrome. The same prompt updates it later.
+Copy the setup prompt from <https://getpeka.com/install> and paste it into Claude Code on each computer. Claude installs this plugin and sets up the computer. The same prompt updates it later. Add the Peka extension once in each browser you use, from the [Chrome Web Store](https://chromewebstore.google.com/detail/jjfjanhhhpgmcheeplmmapiglocofbdo).
 
 By hand, in Claude Code:
 
@@ -13,7 +13,8 @@ By hand, in Claude Code:
 /plugin install peka@getpeka
 ```
 
-- **On this computer only, for free:** run `/peka:setup:local` and `/peka:setup:chrome`. They install Peka's hub here and add the Chrome extension, and notes never leave this computer.
+- **On this computer only, for free:** run `/peka:setup:local`. It installs Peka's hub here, and notes never leave this computer. The extension goes in a browser on the same computer.
+- `/peka:setup:chrome` adds the extension to Google Chrome on this computer, if you'd rather Claude did it.
 - **With Peka cloud, part of Pro, for notes between your computers:** run `/peka:setup:cloud` on each one, and approve it in your browser, where the page shows the same code Claude gives you.
 - `/peka:status` says how Peka is set up here.
 - **Updates:** setting up turns on Claude Code's automatic updates for Peka, so a new version arrives by itself and takes effect in your next session. `/peka:update` updates it now, and Claude says when a newer Peka is out.
@@ -22,7 +23,7 @@ Step by step: <https://getpeka.com/docs>
 
 ## What this plugin runs, sends and fetches
 
-- `runtime/peka` is a compiled program, Peka's session client: `peka.exe` on Windows, and on macOS the `runtime/peka` launcher, which picks the build for the computer. Claude Code starts it with each session as an MCP server, which gives Claude `list_feedback`, `get_feedback` and `update_feedback`, and after each of Claude's replies as a Stop hook that waits for notes and wakes the session. It talks to Peka's hub on this computer at 127.0.0.1 and, with Peka cloud, to https://hub.getpeka.com.
+- `runtime/peka` is a compiled program, Peka's session client: `peka.exe` on Windows, and on macOS the `runtime/peka` launcher, which picks the build for the computer. Claude Code starts it with each session as an MCP server, which gives Claude `list_feedback`, `get_feedback`, `update_feedback` and `link_site`, and after each of Claude's replies as a Stop hook that waits for notes and wakes the session. It talks to Peka's hub on this computer at 127.0.0.1 and, with Peka cloud, to https://hub.getpeka.com.
 - So that your browser's session menu can show a session, it reads the session's title, the start of its first prompt, and when it was last used from Claude Code's transcript and session files on this computer. With Peka cloud the title and prompt are encrypted for your browsers before they leave this computer.
 - A note it fetches holds what you captured: your comment, screenshots, page details and console output. With Peka cloud, notes are end-to-end encrypted, and this computer can open only the notes sent to its own sessions.
 - When a note arrives while the session is idle, the session client posts it into the session's own inbox, which Claude Code gives it. It reads Claude Code's settings to see whether that inbox takes messages.

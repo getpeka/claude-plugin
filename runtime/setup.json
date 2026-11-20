@@ -3,20 +3,20 @@
     "extensionId": "jjfjanhhhpgmcheeplmmapiglocofbdo"
   },
   "hub": {
-    "version": "0.10.0",
-    "url": "https://downloads.getpeka.com/hub/v0.10.0/",
+    "version": "0.15.0",
+    "url": "https://downloads.getpeka.com/hub/v0.15.0/",
     "files": {
       "windows-x64": {
         "file": "peka-hub-windows-x64.tar.gz",
-        "sha256": "1e29a378481383cdd206ae9a143b1619f689d089ebace4fe7f317779648d384c"
+        "sha256": "a56ae022f0d3f2364b409a8b971b49b804f35eb500cf0216fc0a1c7527947cca"
       },
       "darwin-arm64": {
         "file": "peka-hub-darwin-arm64.tar.gz",
-        "sha256": "0685795b95d8c5bbd1991732e4a86fd0bb1cb258a5f75b419089513b9b3ac467"
+        "sha256": "f8ee5946059853ba89a6f95b3e420951747bc5644617dcc05f62beacfb703eab"
       },
       "darwin-x64": {
         "file": "peka-hub-darwin-x64.tar.gz",
-        "sha256": "6e11f85ac2f3a484b96afe1cc58a46bc5a795c0c6e841da65627f163e446c096"
+        "sha256": "e2a2f3661bd17fa3398aa19037e780fbc717dc6520b298c189f7c74140f87c3f"
       }
     }
   }

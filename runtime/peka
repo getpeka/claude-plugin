@@ -3,11 +3,16 @@
 # peka.exe next to this file instead.
 dir=$(dirname "$0")
 case "$(uname -s)-$(uname -m)" in
-  Darwin-arm64) exec "$dir/peka-darwin-arm64" "$@" ;;
-  Darwin-x86_64) exec "$dir/peka-darwin-x64" "$@" ;;
-  Linux-x86_64) exec "$dir/peka-linux-x64" "$@" ;;
-  Linux-aarch64 | Linux-arm64) exec "$dir/peka-linux-arm64" "$@" ;;
-  MINGW* | MSYS* | CYGWIN*) exec "$dir/peka.exe" "$@" ;;
+  Darwin-arm64) bin=peka-darwin-arm64 ;;
+  Darwin-x86_64) bin=peka-darwin-x64 ;;
+  Linux-x86_64) bin=peka-linux-x64 ;;
+  Linux-aarch64 | Linux-arm64) bin=peka-linux-arm64 ;;
+  MINGW* | MSYS* | CYGWIN*) bin=peka.exe ;;
 esac
+if [ -n "$bin" ] && [ -f "$dir/$bin" ]; then
+  # A copy that lost its executable bit (a checkout or an archive that kept no modes) gets it back.
+  [ -x "$dir/$bin" ] || chmod +x "$dir/$bin" 2>/dev/null
+  exec "$dir/$bin" "$@"
+fi
 echo "peka: there's no session client for $(uname -s) $(uname -m) in $dir" >&2
 exit 1
